@@ -18,6 +18,16 @@ export function createApp(): Express {
     }),
   );
 
+  // Raíz: información básica del servicio.
+  app.get('/', (_req: Request, res: Response) => {
+    res.status(200).json({
+      service: 'GatherLeads → Meta Conversions API',
+      status: 'ok',
+      metaConfigured: metaIsConfigured(),
+      endpoints: ['POST /webhook/gatherleads', 'GET /health', 'GET /mappings'],
+    });
+  });
+
   // Healthcheck.
   app.get('/health', (_req: Request, res: Response) => {
     res.status(200).json({

@@ -1,12 +1,16 @@
 /**
  * Entrypoint serverless para Vercel.
  *
- * Vercel enruta todas las peticiones a esta función (ver vercel.json) y la
- * app de Express resuelve las rutas internas (/webhook/gatherleads, /health,
- * /mappings). No se llama a listen(): Vercel invoca la app como handler.
+ * Exportamos un handler EXPLÍCITO que delega en la app de Express, en lugar de
+ * exportar la instancia de Express directamente. El runtime de Vercel valida
+ * que el default export sea una función handler; exportar la app cruda puede
+ * provocar "Invalid export ... must be a function or server" en arranque frío.
  */
+import type { IncomingMessage, ServerResponse } from 'http';
 import { createApp } from '../src/app';
 
 const app = createApp();
 
-export default app;
+export default function handler(req: IncomingMessage, res: ServerResponse): void {
+  (app as unknown as (req: IncomingMessage, res: ServerResponse) => void)(req, res);
+}
