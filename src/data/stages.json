@@ -1,0 +1,1570 @@
+[
+  {
+    "lic": "VW Livianos",
+    "lid": "hfNHQm-AU-VO",
+    "pipeline": "Contact Center",
+    "pid": "gdKUDoox5nWreKtqHr1V8s",
+    "stage": "Prospección Bruta",
+    "sid": "tvbbAisPKP8S3iJM3T5i5L"
+  },
+  {
+    "lic": "VW Livianos",
+    "lid": "hfNHQm-AU-VO",
+    "pipeline": "Contact Center",
+    "pid": "gdKUDoox5nWreKtqHr1V8s",
+    "stage": "Base Prospección",
+    "sid": "4hiZUFzcFWN1RUnnFV5DP6"
+  },
+  {
+    "lic": "VW Livianos",
+    "lid": "hfNHQm-AU-VO",
+    "pipeline": "Contact Center",
+    "pid": "gdKUDoox5nWreKtqHr1V8s",
+    "stage": "Gestión",
+    "sid": "eu7RyLwGLxqJQkegGEWyqH"
+  },
+  {
+    "lic": "VW Livianos",
+    "lid": "hfNHQm-AU-VO",
+    "pipeline": "Contact Center",
+    "pid": "gdKUDoox5nWreKtqHr1V8s",
+    "stage": "Prospección",
+    "sid": "kFANM9653i7G8oJrTuKLN6"
+  },
+  {
+    "lic": "VW Livianos",
+    "lid": "hfNHQm-AU-VO",
+    "pipeline": "Contact Center",
+    "pid": "gdKUDoox5nWreKtqHr1V8s",
+    "stage": "Cita",
+    "sid": "atpE2GZHCV1zMQGWcTSzsf"
+  },
+  {
+    "lic": "VW Livianos",
+    "lid": "hfNHQm-AU-VO",
+    "pipeline": "Contact Center",
+    "pid": "gdKUDoox5nWreKtqHr1V8s",
+    "stage": "Cita Confirmada",
+    "sid": "wHmXL8riWbpGwrzDHxwrgT"
+  },
+  {
+    "lic": "VW Livianos",
+    "lid": "hfNHQm-AU-VO",
+    "pipeline": "Ventas",
+    "pid": "26i8E4KY6oNCi8bwkY9pLM",
+    "stage": "Tráfico",
+    "sid": "iJ9Fctnmaz61NWfsummCYT"
+  },
+  {
+    "lic": "VW Livianos",
+    "lid": "hfNHQm-AU-VO",
+    "pipeline": "Ventas",
+    "pid": "26i8E4KY6oNCi8bwkY9pLM",
+    "stage": "Test Drive",
+    "sid": "pAa667kSTBYhVGx3MB4brd"
+  },
+  {
+    "lic": "VW Livianos",
+    "lid": "hfNHQm-AU-VO",
+    "pipeline": "Ventas",
+    "pid": "26i8E4KY6oNCi8bwkY9pLM",
+    "stage": "Cotización",
+    "sid": "iqXgACEFDM2w1qDn69SZUB"
+  },
+  {
+    "lic": "VW Livianos",
+    "lid": "hfNHQm-AU-VO",
+    "pipeline": "Ventas",
+    "pid": "26i8E4KY6oNCi8bwkY9pLM",
+    "stage": "Reservas",
+    "sid": "5XNn3D476DpDLeGcE3zfU4"
+  },
+  {
+    "lic": "VW Livianos",
+    "lid": "hfNHQm-AU-VO",
+    "pipeline": "Ventas",
+    "pid": "26i8E4KY6oNCi8bwkY9pLM",
+    "stage": "Solicitudes Crédito",
+    "sid": "b5UfeBNcRFNsZnwH8sP2nj"
+  },
+  {
+    "lic": "VW Livianos",
+    "lid": "hfNHQm-AU-VO",
+    "pipeline": "Ventas",
+    "pid": "26i8E4KY6oNCi8bwkY9pLM",
+    "stage": "Solicitudes Aprobadas",
+    "sid": "id5jYWxd9dc82uiZVXVQXC"
+  },
+  {
+    "lic": "VW Livianos",
+    "lid": "hfNHQm-AU-VO",
+    "pipeline": "Ventas",
+    "pid": "26i8E4KY6oNCi8bwkY9pLM",
+    "stage": "Cierre",
+    "sid": "dZAfWGZxabkhudkEFVJAKX"
+  },
+  {
+    "lic": "VW Livianos",
+    "lid": "hfNHQm-AU-VO",
+    "pipeline": "Ventas",
+    "pid": "26i8E4KY6oNCi8bwkY9pLM",
+    "stage": "Perdido",
+    "sid": "6frZrsoHUnpBdpdSRzLdFM"
+  },
+  {
+    "lic": "Chevrolet Livianos",
+    "lid": "fWQnYD-AU-CH",
+    "pipeline": "Contact Center",
+    "pid": "kZXCSebdUgJV7TnVADv1FW",
+    "stage": "Prospección Bruta",
+    "sid": "ogSJNpozKTvP3XRrgCJesL"
+  },
+  {
+    "lic": "Chevrolet Livianos",
+    "lid": "fWQnYD-AU-CH",
+    "pipeline": "Contact Center",
+    "pid": "kZXCSebdUgJV7TnVADv1FW",
+    "stage": "Base Prospección",
+    "sid": "neXS44aNQtRezkhvGGigd3"
+  },
+  {
+    "lic": "Chevrolet Livianos",
+    "lid": "fWQnYD-AU-CH",
+    "pipeline": "Contact Center",
+    "pid": "kZXCSebdUgJV7TnVADv1FW",
+    "stage": "Gestión",
+    "sid": "22EA5m5s1joJPp7n9h6ssd"
+  },
+  {
+    "lic": "Chevrolet Livianos",
+    "lid": "fWQnYD-AU-CH",
+    "pipeline": "Contact Center",
+    "pid": "kZXCSebdUgJV7TnVADv1FW",
+    "stage": "Prospección",
+    "sid": "cFSFckc4cUaqdBEW9ZrsZ3"
+  },
+  {
+    "lic": "Chevrolet Livianos",
+    "lid": "fWQnYD-AU-CH",
+    "pipeline": "Contact Center",
+    "pid": "kZXCSebdUgJV7TnVADv1FW",
+    "stage": "Cita",
+    "sid": "asRCAAW4fJYWbnUmXA2DZf"
+  },
+  {
+    "lic": "Chevrolet Livianos",
+    "lid": "fWQnYD-AU-CH",
+    "pipeline": "Contact Center",
+    "pid": "kZXCSebdUgJV7TnVADv1FW",
+    "stage": "Cita Confirmada",
+    "sid": "iEpNDAwLsLZgUCgm9yia1A"
+  },
+  {
+    "lic": "Chevrolet Livianos",
+    "lid": "fWQnYD-AU-CH",
+    "pipeline": "Ventas",
+    "pid": "e3ckGczANyavfk21Ux3sbr",
+    "stage": "Tráfico",
+    "sid": "8XiTASUVAH8k6T9QHKpi2h"
+  },
+  {
+    "lic": "Chevrolet Livianos",
+    "lid": "fWQnYD-AU-CH",
+    "pipeline": "Ventas",
+    "pid": "e3ckGczANyavfk21Ux3sbr",
+    "stage": "Test Drive",
+    "sid": "wR1roWiDUqxr6KqVNLFsQM"
+  },
+  {
+    "lic": "Chevrolet Livianos",
+    "lid": "fWQnYD-AU-CH",
+    "pipeline": "Ventas",
+    "pid": "e3ckGczANyavfk21Ux3sbr",
+    "stage": "Cotización",
+    "sid": "kpjLiaksKDGa6ikjGhcLJP"
+  },
+  {
+    "lic": "Chevrolet Livianos",
+    "lid": "fWQnYD-AU-CH",
+    "pipeline": "Ventas",
+    "pid": "e3ckGczANyavfk21Ux3sbr",
+    "stage": "Reservas",
+    "sid": "mYjeku61cDiS3gjy8Vz6Gw"
+  },
+  {
+    "lic": "Chevrolet Livianos",
+    "lid": "fWQnYD-AU-CH",
+    "pipeline": "Ventas",
+    "pid": "e3ckGczANyavfk21Ux3sbr",
+    "stage": "Solicitudes Crédito",
+    "sid": "sknhMBwDwvDF9ofYTNaAu1"
+  },
+  {
+    "lic": "Chevrolet Livianos",
+    "lid": "fWQnYD-AU-CH",
+    "pipeline": "Ventas",
+    "pid": "e3ckGczANyavfk21Ux3sbr",
+    "stage": "Solicitudes Aprobadas",
+    "sid": "ug3pTSANuAXx7MvSJKiXEY"
+  },
+  {
+    "lic": "Chevrolet Livianos",
+    "lid": "fWQnYD-AU-CH",
+    "pipeline": "Ventas",
+    "pid": "e3ckGczANyavfk21Ux3sbr",
+    "stage": "Cierre",
+    "sid": "d52xtXznYq3uR5RLZP1aSi"
+  },
+  {
+    "lic": "Chevrolet Livianos",
+    "lid": "fWQnYD-AU-CH",
+    "pipeline": "Ventas",
+    "pid": "e3ckGczANyavfk21Ux3sbr",
+    "stage": "Perdido",
+    "sid": "n1RJCpCs6s2B1baeM7bfSt"
+  },
+  {
+    "lic": "Chevrolet Pesados",
+    "lid": "3dZCEy-AU-CH",
+    "pipeline": "Contact Center",
+    "pid": "9mphcvxrvhEyxA3Yp5BgZN",
+    "stage": "Prospección Bruta",
+    "sid": "dXbE1aZGHcmce9j3KfEkVd"
+  },
+  {
+    "lic": "Chevrolet Pesados",
+    "lid": "3dZCEy-AU-CH",
+    "pipeline": "Contact Center",
+    "pid": "9mphcvxrvhEyxA3Yp5BgZN",
+    "stage": "Base Prospección",
+    "sid": "aq21jnPD5NSiZuLGdQkpMh"
+  },
+  {
+    "lic": "Chevrolet Pesados",
+    "lid": "3dZCEy-AU-CH",
+    "pipeline": "Contact Center",
+    "pid": "9mphcvxrvhEyxA3Yp5BgZN",
+    "stage": "Gestión",
+    "sid": "2Y4JzKLsCeBbqz3EMo1arz"
+  },
+  {
+    "lic": "Chevrolet Pesados",
+    "lid": "3dZCEy-AU-CH",
+    "pipeline": "Contact Center",
+    "pid": "9mphcvxrvhEyxA3Yp5BgZN",
+    "stage": "Prospección",
+    "sid": "7fQYHqkPpM8TiuHVFLeDRa"
+  },
+  {
+    "lic": "Chevrolet Pesados",
+    "lid": "3dZCEy-AU-CH",
+    "pipeline": "Contact Center",
+    "pid": "9mphcvxrvhEyxA3Yp5BgZN",
+    "stage": "Cita",
+    "sid": "txx5iU5zVqDFB5nurM65aF"
+  },
+  {
+    "lic": "Chevrolet Pesados",
+    "lid": "3dZCEy-AU-CH",
+    "pipeline": "Contact Center",
+    "pid": "9mphcvxrvhEyxA3Yp5BgZN",
+    "stage": "Cita Confirmada",
+    "sid": "qRpjkQmzrXG5j4Axe2XX1x"
+  },
+  {
+    "lic": "Chevrolet Pesados",
+    "lid": "3dZCEy-AU-CH",
+    "pipeline": "Ventas",
+    "pid": "9ujtFTT7nbMZU9SjZZ9va7",
+    "stage": "Tráfico",
+    "sid": "dtSfbR99NchLuyNLK4rvdL"
+  },
+  {
+    "lic": "Chevrolet Pesados",
+    "lid": "3dZCEy-AU-CH",
+    "pipeline": "Ventas",
+    "pid": "9ujtFTT7nbMZU9SjZZ9va7",
+    "stage": "Test Drive",
+    "sid": "rETxS4pH9E96cxvJuhio52"
+  },
+  {
+    "lic": "Chevrolet Pesados",
+    "lid": "3dZCEy-AU-CH",
+    "pipeline": "Ventas",
+    "pid": "9ujtFTT7nbMZU9SjZZ9va7",
+    "stage": "Cotización",
+    "sid": "u8CDc3oUPbUghHYmBnaCHv"
+  },
+  {
+    "lic": "Chevrolet Pesados",
+    "lid": "3dZCEy-AU-CH",
+    "pipeline": "Ventas",
+    "pid": "9ujtFTT7nbMZU9SjZZ9va7",
+    "stage": "Reservas",
+    "sid": "8dFtHsfXVcTbB89KaPt9Zz"
+  },
+  {
+    "lic": "Chevrolet Pesados",
+    "lid": "3dZCEy-AU-CH",
+    "pipeline": "Ventas",
+    "pid": "9ujtFTT7nbMZU9SjZZ9va7",
+    "stage": "Solicitudes Crédito",
+    "sid": "pXxHYAs5qMhE3R9Eym62zF"
+  },
+  {
+    "lic": "Chevrolet Pesados",
+    "lid": "3dZCEy-AU-CH",
+    "pipeline": "Ventas",
+    "pid": "9ujtFTT7nbMZU9SjZZ9va7",
+    "stage": "Solicitudes Aprobadas",
+    "sid": "3F2r6p8npnwbrSnfp9ACDh"
+  },
+  {
+    "lic": "Chevrolet Pesados",
+    "lid": "3dZCEy-AU-CH",
+    "pipeline": "Ventas",
+    "pid": "9ujtFTT7nbMZU9SjZZ9va7",
+    "stage": "Cierre",
+    "sid": "qobzdLJrLavAs52wjePYXY"
+  },
+  {
+    "lic": "Chevrolet Pesados",
+    "lid": "3dZCEy-AU-CH",
+    "pipeline": "Ventas",
+    "pid": "9ujtFTT7nbMZU9SjZZ9va7",
+    "stage": "Perdido",
+    "sid": "g1tV9e13qtahn7H9piZiL5"
+  },
+  {
+    "lic": "Subaru Livianos",
+    "lid": "evbRX4-AU-SU",
+    "pipeline": "Contact Center",
+    "pid": "q3vz9Y9cL3uz929v4zQUbN",
+    "stage": "Prospección Bruta",
+    "sid": "hBW7VnFzp58Y5U3S9LSUvd"
+  },
+  {
+    "lic": "Subaru Livianos",
+    "lid": "evbRX4-AU-SU",
+    "pipeline": "Contact Center",
+    "pid": "q3vz9Y9cL3uz929v4zQUbN",
+    "stage": "Base Prospección",
+    "sid": "oMHLn2zYKKnPZPLpYrP3ff"
+  },
+  {
+    "lic": "Subaru Livianos",
+    "lid": "evbRX4-AU-SU",
+    "pipeline": "Contact Center",
+    "pid": "q3vz9Y9cL3uz929v4zQUbN",
+    "stage": "Gestión",
+    "sid": "wDztapAodmxcQMKzfjAbW5"
+  },
+  {
+    "lic": "Subaru Livianos",
+    "lid": "evbRX4-AU-SU",
+    "pipeline": "Contact Center",
+    "pid": "q3vz9Y9cL3uz929v4zQUbN",
+    "stage": "Prospección",
+    "sid": "4bnVHTPv1afawV9oFwChx9"
+  },
+  {
+    "lic": "Subaru Livianos",
+    "lid": "evbRX4-AU-SU",
+    "pipeline": "Contact Center",
+    "pid": "q3vz9Y9cL3uz929v4zQUbN",
+    "stage": "Cita",
+    "sid": "92B6DGMcVkUDV9tyrJbi8e"
+  },
+  {
+    "lic": "Subaru Livianos",
+    "lid": "evbRX4-AU-SU",
+    "pipeline": "Contact Center",
+    "pid": "q3vz9Y9cL3uz929v4zQUbN",
+    "stage": "Cita Confirmada",
+    "sid": "aSjVZkbe55LVMKs58eZY3n"
+  },
+  {
+    "lic": "Subaru Livianos",
+    "lid": "evbRX4-AU-SU",
+    "pipeline": "Ventas",
+    "pid": "gyuMVJxsGFuG28DDGdgGMT",
+    "stage": "Tráfico",
+    "sid": "6ethdhd2dcPtboPDeji5Ce"
+  },
+  {
+    "lic": "Subaru Livianos",
+    "lid": "evbRX4-AU-SU",
+    "pipeline": "Ventas",
+    "pid": "gyuMVJxsGFuG28DDGdgGMT",
+    "stage": "Test Drive",
+    "sid": "3bDWcM49SAv6F6GX2r6S25"
+  },
+  {
+    "lic": "Subaru Livianos",
+    "lid": "evbRX4-AU-SU",
+    "pipeline": "Ventas",
+    "pid": "gyuMVJxsGFuG28DDGdgGMT",
+    "stage": "Cotización",
+    "sid": "8Mfy49u3ZmF6CH7xtZhfVo"
+  },
+  {
+    "lic": "Subaru Livianos",
+    "lid": "evbRX4-AU-SU",
+    "pipeline": "Ventas",
+    "pid": "gyuMVJxsGFuG28DDGdgGMT",
+    "stage": "Reservas",
+    "sid": "8WxFsViAKF4RT5bGMSiB4v"
+  },
+  {
+    "lic": "Subaru Livianos",
+    "lid": "evbRX4-AU-SU",
+    "pipeline": "Ventas",
+    "pid": "gyuMVJxsGFuG28DDGdgGMT",
+    "stage": "Solicitudes Crédito",
+    "sid": "in6h9JjS8VmNzmwFTPRqzx"
+  },
+  {
+    "lic": "Subaru Livianos",
+    "lid": "evbRX4-AU-SU",
+    "pipeline": "Ventas",
+    "pid": "gyuMVJxsGFuG28DDGdgGMT",
+    "stage": "Solicitudes Aprobadas",
+    "sid": "4zYy28sMn78VtGktDRfNrC"
+  },
+  {
+    "lic": "Subaru Livianos",
+    "lid": "evbRX4-AU-SU",
+    "pipeline": "Ventas",
+    "pid": "gyuMVJxsGFuG28DDGdgGMT",
+    "stage": "Cierre",
+    "sid": "tSL8MH35qXNfdaFCmDwS1U"
+  },
+  {
+    "lic": "Subaru Livianos",
+    "lid": "evbRX4-AU-SU",
+    "pipeline": "Ventas",
+    "pid": "gyuMVJxsGFuG28DDGdgGMT",
+    "stage": "Perdido",
+    "sid": "w4R757xpj2JdrpYgFxRVoC"
+  },
+  {
+    "lic": "Geely Livianos",
+    "lid": "8FnGAN-AU-GE",
+    "pipeline": "Contact Center",
+    "pid": "aW5ZA5acGFdnJQYRCd8ium",
+    "stage": "Prospección Bruta",
+    "sid": "kYsjQ4S6MCqAg2RjL6HFi2"
+  },
+  {
+    "lic": "Geely Livianos",
+    "lid": "8FnGAN-AU-GE",
+    "pipeline": "Contact Center",
+    "pid": "aW5ZA5acGFdnJQYRCd8ium",
+    "stage": "Base Prospección",
+    "sid": "1vtsEWZsXwZ99BJJc5YCRY"
+  },
+  {
+    "lic": "Geely Livianos",
+    "lid": "8FnGAN-AU-GE",
+    "pipeline": "Contact Center",
+    "pid": "aW5ZA5acGFdnJQYRCd8ium",
+    "stage": "Gestión",
+    "sid": "iqhfHeUFmxjb35y5fKGdMQ"
+  },
+  {
+    "lic": "Geely Livianos",
+    "lid": "8FnGAN-AU-GE",
+    "pipeline": "Contact Center",
+    "pid": "aW5ZA5acGFdnJQYRCd8ium",
+    "stage": "Prospección",
+    "sid": "rJhfFkvH1JTYbTn28w9E44"
+  },
+  {
+    "lic": "Geely Livianos",
+    "lid": "8FnGAN-AU-GE",
+    "pipeline": "Contact Center",
+    "pid": "aW5ZA5acGFdnJQYRCd8ium",
+    "stage": "Cita",
+    "sid": "czEsB2mDqy4gtgDjPC9YYe"
+  },
+  {
+    "lic": "Geely Livianos",
+    "lid": "8FnGAN-AU-GE",
+    "pipeline": "Contact Center",
+    "pid": "aW5ZA5acGFdnJQYRCd8ium",
+    "stage": "Cita Confirmada",
+    "sid": "pT8nBB3ojsw6wsehHpqkRR"
+  },
+  {
+    "lic": "Geely Livianos",
+    "lid": "8FnGAN-AU-GE",
+    "pipeline": "Ventas",
+    "pid": "gqDQQsGcFceEziqC4HXTS6",
+    "stage": "Tráfico",
+    "sid": "9QAtpwELhzyJDVoKWc8yoX"
+  },
+  {
+    "lic": "Geely Livianos",
+    "lid": "8FnGAN-AU-GE",
+    "pipeline": "Ventas",
+    "pid": "gqDQQsGcFceEziqC4HXTS6",
+    "stage": "Test Drive",
+    "sid": "j9y3WeaYCwuCNBgzX64YuE"
+  },
+  {
+    "lic": "Geely Livianos",
+    "lid": "8FnGAN-AU-GE",
+    "pipeline": "Ventas",
+    "pid": "gqDQQsGcFceEziqC4HXTS6",
+    "stage": "Cotización",
+    "sid": "oLCaT33EnKoaSACnv62jqd"
+  },
+  {
+    "lic": "Geely Livianos",
+    "lid": "8FnGAN-AU-GE",
+    "pipeline": "Ventas",
+    "pid": "gqDQQsGcFceEziqC4HXTS6",
+    "stage": "Reservas",
+    "sid": "pr7XVXFM6a14RXEehHmtNJ"
+  },
+  {
+    "lic": "Geely Livianos",
+    "lid": "8FnGAN-AU-GE",
+    "pipeline": "Ventas",
+    "pid": "gqDQQsGcFceEziqC4HXTS6",
+    "stage": "Solicitudes Crédito",
+    "sid": "6WeS8PhSh43vMCH8ebAjTk"
+  },
+  {
+    "lic": "Geely Livianos",
+    "lid": "8FnGAN-AU-GE",
+    "pipeline": "Ventas",
+    "pid": "gqDQQsGcFceEziqC4HXTS6",
+    "stage": "Solicitudes Aprobadas",
+    "sid": "h9kMKTjWbZE4BYVbZMac5b"
+  },
+  {
+    "lic": "Geely Livianos",
+    "lid": "8FnGAN-AU-GE",
+    "pipeline": "Ventas",
+    "pid": "gqDQQsGcFceEziqC4HXTS6",
+    "stage": "Cierre",
+    "sid": "xqLba1NPCbBiPV6MKboXVS"
+  },
+  {
+    "lic": "Geely Livianos",
+    "lid": "8FnGAN-AU-GE",
+    "pipeline": "Ventas",
+    "pid": "gqDQQsGcFceEziqC4HXTS6",
+    "stage": "Perdido",
+    "sid": "uQ3bC7QkfTA4tFpzVvCr9z"
+  },
+  {
+    "lic": "MG Livianos",
+    "lid": "dQewwr-AU-MG",
+    "pipeline": "Contact Center",
+    "pid": "6LAxTh3Adniiat4ihztvJn",
+    "stage": "Prospección Bruta",
+    "sid": "k4hUWP2J7eqYKax8tCJX8Y"
+  },
+  {
+    "lic": "MG Livianos",
+    "lid": "dQewwr-AU-MG",
+    "pipeline": "Contact Center",
+    "pid": "6LAxTh3Adniiat4ihztvJn",
+    "stage": "Base Prospección",
+    "sid": "uW1B1U8oHYbetDUJ9Z4pGE"
+  },
+  {
+    "lic": "MG Livianos",
+    "lid": "dQewwr-AU-MG",
+    "pipeline": "Contact Center",
+    "pid": "6LAxTh3Adniiat4ihztvJn",
+    "stage": "Gestión",
+    "sid": "wapuDcEDiFRvZh6u77yjqf"
+  },
+  {
+    "lic": "MG Livianos",
+    "lid": "dQewwr-AU-MG",
+    "pipeline": "Contact Center",
+    "pid": "6LAxTh3Adniiat4ihztvJn",
+    "stage": "Prospección",
+    "sid": "tLm2JLVfxgtMAQYFzGTkDb"
+  },
+  {
+    "lic": "MG Livianos",
+    "lid": "dQewwr-AU-MG",
+    "pipeline": "Contact Center",
+    "pid": "6LAxTh3Adniiat4ihztvJn",
+    "stage": "Cita",
+    "sid": "iLyqH5JGpsdnBARnkUTZfu"
+  },
+  {
+    "lic": "MG Livianos",
+    "lid": "dQewwr-AU-MG",
+    "pipeline": "Contact Center",
+    "pid": "6LAxTh3Adniiat4ihztvJn",
+    "stage": "Cita Confirmada",
+    "sid": "5xBEy6ptnZhzzBpvr9p6JC"
+  },
+  {
+    "lic": "MG Livianos",
+    "lid": "dQewwr-AU-MG",
+    "pipeline": "Ventas",
+    "pid": "518v5zSysYeoWdS2TRDiEW",
+    "stage": "Tráfico",
+    "sid": "fkdEF2YPbL4wFTvZJAea2G"
+  },
+  {
+    "lic": "MG Livianos",
+    "lid": "dQewwr-AU-MG",
+    "pipeline": "Ventas",
+    "pid": "518v5zSysYeoWdS2TRDiEW",
+    "stage": "Test Drive",
+    "sid": "q4RRt1GqC9djJKSVWPWmvA"
+  },
+  {
+    "lic": "MG Livianos",
+    "lid": "dQewwr-AU-MG",
+    "pipeline": "Ventas",
+    "pid": "518v5zSysYeoWdS2TRDiEW",
+    "stage": "Cotización",
+    "sid": "nLKXnsyE3z7K7jhSv1sgz7"
+  },
+  {
+    "lic": "MG Livianos",
+    "lid": "dQewwr-AU-MG",
+    "pipeline": "Ventas",
+    "pid": "518v5zSysYeoWdS2TRDiEW",
+    "stage": "Reservas",
+    "sid": "vtHvdFrGZnDNNLWj24yCQb"
+  },
+  {
+    "lic": "MG Livianos",
+    "lid": "dQewwr-AU-MG",
+    "pipeline": "Ventas",
+    "pid": "518v5zSysYeoWdS2TRDiEW",
+    "stage": "Solicitudes Crédito",
+    "sid": "cxdE71UmiND9gPxJaA9RVm"
+  },
+  {
+    "lic": "MG Livianos",
+    "lid": "dQewwr-AU-MG",
+    "pipeline": "Ventas",
+    "pid": "518v5zSysYeoWdS2TRDiEW",
+    "stage": "Solicitudes Aprobadas",
+    "sid": "4CSAuSuDiMX2ZM9xzuKAZ2"
+  },
+  {
+    "lic": "MG Livianos",
+    "lid": "dQewwr-AU-MG",
+    "pipeline": "Ventas",
+    "pid": "518v5zSysYeoWdS2TRDiEW",
+    "stage": "Cierre",
+    "sid": "jg38CPE5F95otL1nmbJ9xv"
+  },
+  {
+    "lic": "MG Livianos",
+    "lid": "dQewwr-AU-MG",
+    "pipeline": "Ventas",
+    "pid": "518v5zSysYeoWdS2TRDiEW",
+    "stage": "Perdido",
+    "sid": "mEg19kDbtKGi8oEU7Bfb26"
+  },
+  {
+    "lic": "Maxus Livianos",
+    "lid": "wRYKSP-AU-MA",
+    "pipeline": "Contact Center",
+    "pid": "mY2wFdie7KWzpia4uEyfQj",
+    "stage": "Prospección Bruta",
+    "sid": "6BY1zHscK3xpoCpdceL2Hj"
+  },
+  {
+    "lic": "Maxus Livianos",
+    "lid": "wRYKSP-AU-MA",
+    "pipeline": "Contact Center",
+    "pid": "mY2wFdie7KWzpia4uEyfQj",
+    "stage": "Base Prospección",
+    "sid": "nvX2Jqypi6reoJQuXgWwVT"
+  },
+  {
+    "lic": "Maxus Livianos",
+    "lid": "wRYKSP-AU-MA",
+    "pipeline": "Contact Center",
+    "pid": "mY2wFdie7KWzpia4uEyfQj",
+    "stage": "Gestión",
+    "sid": "bxBzDtgZqfu1d4QwaqE2uY"
+  },
+  {
+    "lic": "Maxus Livianos",
+    "lid": "wRYKSP-AU-MA",
+    "pipeline": "Contact Center",
+    "pid": "mY2wFdie7KWzpia4uEyfQj",
+    "stage": "Prospección",
+    "sid": "qkTQB5WjuKRt6BBmteLDWi"
+  },
+  {
+    "lic": "Maxus Livianos",
+    "lid": "wRYKSP-AU-MA",
+    "pipeline": "Contact Center",
+    "pid": "mY2wFdie7KWzpia4uEyfQj",
+    "stage": "Cita",
+    "sid": "4BrztwgXRQY3YRZtF4GhDm"
+  },
+  {
+    "lic": "Maxus Livianos",
+    "lid": "wRYKSP-AU-MA",
+    "pipeline": "Contact Center",
+    "pid": "mY2wFdie7KWzpia4uEyfQj",
+    "stage": "Cita Confirmada",
+    "sid": "cmcmcmKECwdEEC599tu2BK"
+  },
+  {
+    "lic": "Maxus Livianos",
+    "lid": "wRYKSP-AU-MA",
+    "pipeline": "Ventas",
+    "pid": "hpdgfroFS1Y6s6D75h9AT4",
+    "stage": "Tráfico",
+    "sid": "faD4BUrFnW1Uw3dWhL16iz"
+  },
+  {
+    "lic": "Maxus Livianos",
+    "lid": "wRYKSP-AU-MA",
+    "pipeline": "Ventas",
+    "pid": "hpdgfroFS1Y6s6D75h9AT4",
+    "stage": "Test Drive",
+    "sid": "6NfGFUdVA5p4Ty8gatPGDB"
+  },
+  {
+    "lic": "Maxus Livianos",
+    "lid": "wRYKSP-AU-MA",
+    "pipeline": "Ventas",
+    "pid": "hpdgfroFS1Y6s6D75h9AT4",
+    "stage": "Cotización",
+    "sid": "shLxzFCm8gZ58WGyoKsqxV"
+  },
+  {
+    "lic": "Maxus Livianos",
+    "lid": "wRYKSP-AU-MA",
+    "pipeline": "Ventas",
+    "pid": "hpdgfroFS1Y6s6D75h9AT4",
+    "stage": "Reservas",
+    "sid": "jzjA9VnHcX2CjZBeJDNnv1"
+  },
+  {
+    "lic": "Maxus Livianos",
+    "lid": "wRYKSP-AU-MA",
+    "pipeline": "Ventas",
+    "pid": "hpdgfroFS1Y6s6D75h9AT4",
+    "stage": "Solicitudes Crédito",
+    "sid": "fdVbmjWt8TXkwh6N4WMHHx"
+  },
+  {
+    "lic": "Maxus Livianos",
+    "lid": "wRYKSP-AU-MA",
+    "pipeline": "Ventas",
+    "pid": "hpdgfroFS1Y6s6D75h9AT4",
+    "stage": "Solicitudes Aprobadas",
+    "sid": "j8y5j1m8LfuVPc9oBFSpZ9"
+  },
+  {
+    "lic": "Maxus Livianos",
+    "lid": "wRYKSP-AU-MA",
+    "pipeline": "Ventas",
+    "pid": "hpdgfroFS1Y6s6D75h9AT4",
+    "stage": "Cierre",
+    "sid": "7Hwvt4GfNMtVMxbiySYHH6"
+  },
+  {
+    "lic": "Maxus Livianos",
+    "lid": "wRYKSP-AU-MA",
+    "pipeline": "Ventas",
+    "pid": "hpdgfroFS1Y6s6D75h9AT4",
+    "stage": "Perdido",
+    "sid": "8RYtjvDawJZTcLBa8j8GwF"
+  },
+  {
+    "lic": "Maxus Pesados",
+    "lid": "iEGaTL-AU-MA",
+    "pipeline": "Contact Center",
+    "pid": "q46SQsc5wyFRnSCxczD6qs",
+    "stage": "Prospección Bruta",
+    "sid": "5VNG5NmmcDJZsRoUD6uQrk"
+  },
+  {
+    "lic": "Maxus Pesados",
+    "lid": "iEGaTL-AU-MA",
+    "pipeline": "Contact Center",
+    "pid": "q46SQsc5wyFRnSCxczD6qs",
+    "stage": "Base Prospección",
+    "sid": "1y5pUmmpameJGg31wJJDr7"
+  },
+  {
+    "lic": "Maxus Pesados",
+    "lid": "iEGaTL-AU-MA",
+    "pipeline": "Contact Center",
+    "pid": "q46SQsc5wyFRnSCxczD6qs",
+    "stage": "Gestión",
+    "sid": "jbAkt7Vn2nsHrSbVvN9YhP"
+  },
+  {
+    "lic": "Maxus Pesados",
+    "lid": "iEGaTL-AU-MA",
+    "pipeline": "Contact Center",
+    "pid": "q46SQsc5wyFRnSCxczD6qs",
+    "stage": "Prospección",
+    "sid": "niFsvuFG6GuVFDMTgzNQcX"
+  },
+  {
+    "lic": "Maxus Pesados",
+    "lid": "iEGaTL-AU-MA",
+    "pipeline": "Contact Center",
+    "pid": "q46SQsc5wyFRnSCxczD6qs",
+    "stage": "Cita",
+    "sid": "25ouGE1zhjojoaJRYz9xbE"
+  },
+  {
+    "lic": "Maxus Pesados",
+    "lid": "iEGaTL-AU-MA",
+    "pipeline": "Contact Center",
+    "pid": "q46SQsc5wyFRnSCxczD6qs",
+    "stage": "Cita Confirmada",
+    "sid": "oegRiMx4MnBzkMMWF9e9ni"
+  },
+  {
+    "lic": "Maxus Pesados",
+    "lid": "iEGaTL-AU-MA",
+    "pipeline": "Ventas",
+    "pid": "awdYogP7AoeA9jZ18sWzop",
+    "stage": "Tráfico",
+    "sid": "xxy4HhBD1xryxtNVozd8Tn"
+  },
+  {
+    "lic": "Maxus Pesados",
+    "lid": "iEGaTL-AU-MA",
+    "pipeline": "Ventas",
+    "pid": "awdYogP7AoeA9jZ18sWzop",
+    "stage": "Test Drive",
+    "sid": "3T6FHtAaBwVdrDZu9eLuv3"
+  },
+  {
+    "lic": "Maxus Pesados",
+    "lid": "iEGaTL-AU-MA",
+    "pipeline": "Ventas",
+    "pid": "awdYogP7AoeA9jZ18sWzop",
+    "stage": "Cotización",
+    "sid": "iW4tjt2mdMdaTXu6TWVmUr"
+  },
+  {
+    "lic": "Maxus Pesados",
+    "lid": "iEGaTL-AU-MA",
+    "pipeline": "Ventas",
+    "pid": "awdYogP7AoeA9jZ18sWzop",
+    "stage": "Reservas",
+    "sid": "sNuBqfiyEn95RpEW2f7TuW"
+  },
+  {
+    "lic": "Maxus Pesados",
+    "lid": "iEGaTL-AU-MA",
+    "pipeline": "Ventas",
+    "pid": "awdYogP7AoeA9jZ18sWzop",
+    "stage": "Solicitudes Crédito",
+    "sid": "fWCM2UT2GBQ7Z5FGYj2sAJ"
+  },
+  {
+    "lic": "Maxus Pesados",
+    "lid": "iEGaTL-AU-MA",
+    "pipeline": "Ventas",
+    "pid": "awdYogP7AoeA9jZ18sWzop",
+    "stage": "Solicitudes Aprobadas",
+    "sid": "bZAZQioALai5abBcaMdqen"
+  },
+  {
+    "lic": "Maxus Pesados",
+    "lid": "iEGaTL-AU-MA",
+    "pipeline": "Ventas",
+    "pid": "awdYogP7AoeA9jZ18sWzop",
+    "stage": "Cierre",
+    "sid": "otZhjE5Hud5ey8PJDuGvWp"
+  },
+  {
+    "lic": "Maxus Pesados",
+    "lid": "iEGaTL-AU-MA",
+    "pipeline": "Ventas",
+    "pid": "awdYogP7AoeA9jZ18sWzop",
+    "stage": "Perdido",
+    "sid": "m2n2bKqnMGEAjqMVChbJrS"
+  },
+  {
+    "lic": "GAC Livianos",
+    "lid": "5mpwHS-AU-GA",
+    "pipeline": "Contact Center",
+    "pid": "5ZBwvpUoTxmiuQ2HRroFEw",
+    "stage": "Prospección Bruta",
+    "sid": "xra7xxBg52HuMioGt4sFwa"
+  },
+  {
+    "lic": "GAC Livianos",
+    "lid": "5mpwHS-AU-GA",
+    "pipeline": "Contact Center",
+    "pid": "5ZBwvpUoTxmiuQ2HRroFEw",
+    "stage": "Base Prospección",
+    "sid": "6baWuJ8z3zhVNc1EknQbCy"
+  },
+  {
+    "lic": "GAC Livianos",
+    "lid": "5mpwHS-AU-GA",
+    "pipeline": "Contact Center",
+    "pid": "5ZBwvpUoTxmiuQ2HRroFEw",
+    "stage": "Gestión",
+    "sid": "37FNWvghhuHyGmEtShpiy4"
+  },
+  {
+    "lic": "GAC Livianos",
+    "lid": "5mpwHS-AU-GA",
+    "pipeline": "Contact Center",
+    "pid": "5ZBwvpUoTxmiuQ2HRroFEw",
+    "stage": "Prospección",
+    "sid": "qdrM6ydeCGocGxj7HtjceT"
+  },
+  {
+    "lic": "GAC Livianos",
+    "lid": "5mpwHS-AU-GA",
+    "pipeline": "Contact Center",
+    "pid": "5ZBwvpUoTxmiuQ2HRroFEw",
+    "stage": "Cita",
+    "sid": "8XyL75ZvEcXF9LQRroid5i"
+  },
+  {
+    "lic": "GAC Livianos",
+    "lid": "5mpwHS-AU-GA",
+    "pipeline": "Contact Center",
+    "pid": "5ZBwvpUoTxmiuQ2HRroFEw",
+    "stage": "Cita Confirmada",
+    "sid": "ch5nkQFj4ub6H435779WtP"
+  },
+  {
+    "lic": "GAC Livianos",
+    "lid": "5mpwHS-AU-GA",
+    "pipeline": "Ventas",
+    "pid": "84EpYiFG6Kkb1eGczdeUxp",
+    "stage": "Tráfico",
+    "sid": "5Giuwb6GjwDPgZ2Bz9KeYj"
+  },
+  {
+    "lic": "GAC Livianos",
+    "lid": "5mpwHS-AU-GA",
+    "pipeline": "Ventas",
+    "pid": "84EpYiFG6Kkb1eGczdeUxp",
+    "stage": "Test Drive",
+    "sid": "rttzSTdpr1cbkWkWiKYeaX"
+  },
+  {
+    "lic": "GAC Livianos",
+    "lid": "5mpwHS-AU-GA",
+    "pipeline": "Ventas",
+    "pid": "84EpYiFG6Kkb1eGczdeUxp",
+    "stage": "Cotización",
+    "sid": "tVtT74s5bsNe7k4CmM7tk5"
+  },
+  {
+    "lic": "GAC Livianos",
+    "lid": "5mpwHS-AU-GA",
+    "pipeline": "Ventas",
+    "pid": "84EpYiFG6Kkb1eGczdeUxp",
+    "stage": "Reservas",
+    "sid": "frkpbkGq9tmH18joFbWsPP"
+  },
+  {
+    "lic": "GAC Livianos",
+    "lid": "5mpwHS-AU-GA",
+    "pipeline": "Ventas",
+    "pid": "84EpYiFG6Kkb1eGczdeUxp",
+    "stage": "Solicitudes Crédito",
+    "sid": "jvgNsp5wF1PoF4wETU2Vmv"
+  },
+  {
+    "lic": "GAC Livianos",
+    "lid": "5mpwHS-AU-GA",
+    "pipeline": "Ventas",
+    "pid": "84EpYiFG6Kkb1eGczdeUxp",
+    "stage": "Solicitudes Aprobadas",
+    "sid": "fmVMhj8ntxTzW4PoELkNj5"
+  },
+  {
+    "lic": "GAC Livianos",
+    "lid": "5mpwHS-AU-GA",
+    "pipeline": "Ventas",
+    "pid": "84EpYiFG6Kkb1eGczdeUxp",
+    "stage": "Cierre",
+    "sid": "iPsrEZQSQzdX85YNUXMVDV"
+  },
+  {
+    "lic": "GAC Livianos",
+    "lid": "5mpwHS-AU-GA",
+    "pipeline": "Ventas",
+    "pid": "84EpYiFG6Kkb1eGczdeUxp",
+    "stage": "Perdido",
+    "sid": "owdBejVjwH8wrw8KygMQtr"
+  },
+  {
+    "lic": "Mercedes Livianos",
+    "lid": "vkamLq-AU-ME",
+    "pipeline": "Contact Center",
+    "pid": "w3toznUuPA1JcqHZdSerBe",
+    "stage": "Prospección Bruta",
+    "sid": "bVoDdbzssLAU1TesevP58u"
+  },
+  {
+    "lic": "Mercedes Livianos",
+    "lid": "vkamLq-AU-ME",
+    "pipeline": "Contact Center",
+    "pid": "w3toznUuPA1JcqHZdSerBe",
+    "stage": "Base Prospección",
+    "sid": "mkDmeFeCFsfMV9w9Vv2vw9"
+  },
+  {
+    "lic": "Mercedes Livianos",
+    "lid": "vkamLq-AU-ME",
+    "pipeline": "Contact Center",
+    "pid": "w3toznUuPA1JcqHZdSerBe",
+    "stage": "Gestión",
+    "sid": "vk7o4jAxQu8bmqSwBJUGFr"
+  },
+  {
+    "lic": "Mercedes Livianos",
+    "lid": "vkamLq-AU-ME",
+    "pipeline": "Contact Center",
+    "pid": "w3toznUuPA1JcqHZdSerBe",
+    "stage": "Prospección",
+    "sid": "h9Q2sSp8E9JGLHqBo24kHc"
+  },
+  {
+    "lic": "Mercedes Livianos",
+    "lid": "vkamLq-AU-ME",
+    "pipeline": "Contact Center",
+    "pid": "w3toznUuPA1JcqHZdSerBe",
+    "stage": "Cita",
+    "sid": "bayfJgrxSszs45Wn1a5syL"
+  },
+  {
+    "lic": "Mercedes Livianos",
+    "lid": "vkamLq-AU-ME",
+    "pipeline": "Contact Center",
+    "pid": "w3toznUuPA1JcqHZdSerBe",
+    "stage": "Cita Confirmada",
+    "sid": "4mAygYYVyW3NPcvJRtr4Lv"
+  },
+  {
+    "lic": "Mercedes Livianos",
+    "lid": "vkamLq-AU-ME",
+    "pipeline": "Ventas",
+    "pid": "1WU1J3ntfQcC5CvaQHVxZ3",
+    "stage": "Tráfico",
+    "sid": "hDijkqXeija4vSnFKz25nY"
+  },
+  {
+    "lic": "Mercedes Livianos",
+    "lid": "vkamLq-AU-ME",
+    "pipeline": "Ventas",
+    "pid": "1WU1J3ntfQcC5CvaQHVxZ3",
+    "stage": "Test Drive",
+    "sid": "3d5CjG6ksb9R7FW7hTdgMW"
+  },
+  {
+    "lic": "Mercedes Livianos",
+    "lid": "vkamLq-AU-ME",
+    "pipeline": "Ventas",
+    "pid": "1WU1J3ntfQcC5CvaQHVxZ3",
+    "stage": "Cotización",
+    "sid": "fvyKu4ZP3mMKLXf7BMgEcm"
+  },
+  {
+    "lic": "Mercedes Livianos",
+    "lid": "vkamLq-AU-ME",
+    "pipeline": "Ventas",
+    "pid": "1WU1J3ntfQcC5CvaQHVxZ3",
+    "stage": "Reservas",
+    "sid": "qm7pTKKMWgNpDuGDH8J3sY"
+  },
+  {
+    "lic": "Mercedes Livianos",
+    "lid": "vkamLq-AU-ME",
+    "pipeline": "Ventas",
+    "pid": "1WU1J3ntfQcC5CvaQHVxZ3",
+    "stage": "Solicitudes Crédito",
+    "sid": "qGe6dciHR5FAL9sHXhAzKg"
+  },
+  {
+    "lic": "Mercedes Livianos",
+    "lid": "vkamLq-AU-ME",
+    "pipeline": "Ventas",
+    "pid": "1WU1J3ntfQcC5CvaQHVxZ3",
+    "stage": "Solicitudes Aprobadas",
+    "sid": "3LieC3sosBbULrH8fH7XLc"
+  },
+  {
+    "lic": "Mercedes Livianos",
+    "lid": "vkamLq-AU-ME",
+    "pipeline": "Ventas",
+    "pid": "1WU1J3ntfQcC5CvaQHVxZ3",
+    "stage": "Cierre",
+    "sid": "aLeAcUxdX9RWGEFfvZojSr"
+  },
+  {
+    "lic": "Mercedes Livianos",
+    "lid": "vkamLq-AU-ME",
+    "pipeline": "Ventas",
+    "pid": "1WU1J3ntfQcC5CvaQHVxZ3",
+    "stage": "Perdido",
+    "sid": "go39JiT7VwbYL8PCdm5Q7t"
+  },
+  {
+    "lic": "Mercedes Pesados",
+    "lid": "jeiq8h-AU-ME",
+    "pipeline": "Contact Center",
+    "pid": "bRWfHJDf5HDwCzizdNwgAY",
+    "stage": "Prospección Bruta",
+    "sid": "59FVMq3BbWmCVatiHDULzJ"
+  },
+  {
+    "lic": "Mercedes Pesados",
+    "lid": "jeiq8h-AU-ME",
+    "pipeline": "Contact Center",
+    "pid": "bRWfHJDf5HDwCzizdNwgAY",
+    "stage": "Base Prospección",
+    "sid": "ouPWEho8akhKVhMrYDrQhS"
+  },
+  {
+    "lic": "Mercedes Pesados",
+    "lid": "jeiq8h-AU-ME",
+    "pipeline": "Contact Center",
+    "pid": "bRWfHJDf5HDwCzizdNwgAY",
+    "stage": "Gestión",
+    "sid": "889qKRzef7EajyvQb8foqu"
+  },
+  {
+    "lic": "Mercedes Pesados",
+    "lid": "jeiq8h-AU-ME",
+    "pipeline": "Contact Center",
+    "pid": "bRWfHJDf5HDwCzizdNwgAY",
+    "stage": "Prospección",
+    "sid": "qtjhfaM245kcH93SUeH6Mh"
+  },
+  {
+    "lic": "Mercedes Pesados",
+    "lid": "jeiq8h-AU-ME",
+    "pipeline": "Contact Center",
+    "pid": "bRWfHJDf5HDwCzizdNwgAY",
+    "stage": "Cita",
+    "sid": "1x5RNmPMPGNPtYrQp6QupJ"
+  },
+  {
+    "lic": "Mercedes Pesados",
+    "lid": "jeiq8h-AU-ME",
+    "pipeline": "Contact Center",
+    "pid": "bRWfHJDf5HDwCzizdNwgAY",
+    "stage": "Cita Confirmada",
+    "sid": "cxW2XFQsizf7ob6KQVrHnH"
+  },
+  {
+    "lic": "Mercedes Pesados",
+    "lid": "jeiq8h-AU-ME",
+    "pipeline": "Ventas",
+    "pid": "hKKUkz611HGHWwTd1XiUug",
+    "stage": "Tráfico",
+    "sid": "erowLJbMsivjCjCc5nJkrv"
+  },
+  {
+    "lic": "Mercedes Pesados",
+    "lid": "jeiq8h-AU-ME",
+    "pipeline": "Ventas",
+    "pid": "hKKUkz611HGHWwTd1XiUug",
+    "stage": "Test Drive",
+    "sid": "e4HWAH9QaRsFoxKCsUcwpr"
+  },
+  {
+    "lic": "Mercedes Pesados",
+    "lid": "jeiq8h-AU-ME",
+    "pipeline": "Ventas",
+    "pid": "hKKUkz611HGHWwTd1XiUug",
+    "stage": "Cotización",
+    "sid": "vZkS3Z5r2wTacGTu4EQypM"
+  },
+  {
+    "lic": "Mercedes Pesados",
+    "lid": "jeiq8h-AU-ME",
+    "pipeline": "Ventas",
+    "pid": "hKKUkz611HGHWwTd1XiUug",
+    "stage": "Reservas",
+    "sid": "6j5chBBiURxYpZUySiA9u5"
+  },
+  {
+    "lic": "Mercedes Pesados",
+    "lid": "jeiq8h-AU-ME",
+    "pipeline": "Ventas",
+    "pid": "hKKUkz611HGHWwTd1XiUug",
+    "stage": "Solicitudes Crédito",
+    "sid": "st53R8rsuCDDv8QUz6hSXj"
+  },
+  {
+    "lic": "Mercedes Pesados",
+    "lid": "jeiq8h-AU-ME",
+    "pipeline": "Ventas",
+    "pid": "hKKUkz611HGHWwTd1XiUug",
+    "stage": "Solicitudes Aprobadas",
+    "sid": "jhdxGP2FWdvkkQKyDNhASC"
+  },
+  {
+    "lic": "Mercedes Pesados",
+    "lid": "jeiq8h-AU-ME",
+    "pipeline": "Ventas",
+    "pid": "hKKUkz611HGHWwTd1XiUug",
+    "stage": "Cierre",
+    "sid": "iSHBzpsYNDQHE7AVrh2fhe"
+  },
+  {
+    "lic": "Mercedes Pesados",
+    "lid": "jeiq8h-AU-ME",
+    "pipeline": "Ventas",
+    "pid": "hKKUkz611HGHWwTd1XiUug",
+    "stage": "Perdido",
+    "sid": "4LooP64VS8XAiWpN1RniM8"
+  },
+  {
+    "lic": "Outlet Seminuevos",
+    "lid": "s3aGa1-AU-OU",
+    "pipeline": "Contact Center",
+    "pid": "j4siSkfHvCchhrJn1MHKTu",
+    "stage": "Prospección Bruta",
+    "sid": "nUhLAuje4VSTFaynHUyrv7"
+  },
+  {
+    "lic": "Outlet Seminuevos",
+    "lid": "s3aGa1-AU-OU",
+    "pipeline": "Contact Center",
+    "pid": "j4siSkfHvCchhrJn1MHKTu",
+    "stage": "Base Prospección",
+    "sid": "eVG4FvuvQYb2jNfiiXzCud"
+  },
+  {
+    "lic": "Outlet Seminuevos",
+    "lid": "s3aGa1-AU-OU",
+    "pipeline": "Contact Center",
+    "pid": "j4siSkfHvCchhrJn1MHKTu",
+    "stage": "Gestión",
+    "sid": "on3uxsqqrfCnRKPbD7DHdu"
+  },
+  {
+    "lic": "Outlet Seminuevos",
+    "lid": "s3aGa1-AU-OU",
+    "pipeline": "Contact Center",
+    "pid": "j4siSkfHvCchhrJn1MHKTu",
+    "stage": "Prospección",
+    "sid": "6MknB6d1gHHHQT1WmTLHUA"
+  },
+  {
+    "lic": "Outlet Seminuevos",
+    "lid": "s3aGa1-AU-OU",
+    "pipeline": "Contact Center",
+    "pid": "j4siSkfHvCchhrJn1MHKTu",
+    "stage": "Cita",
+    "sid": "ebG5a8khN4n5rawKExKMqp"
+  },
+  {
+    "lic": "Outlet Seminuevos",
+    "lid": "s3aGa1-AU-OU",
+    "pipeline": "Contact Center",
+    "pid": "j4siSkfHvCchhrJn1MHKTu",
+    "stage": "Cita Confirmada",
+    "sid": "uxU4aCEBNoV6ChSeV7GeKK"
+  },
+  {
+    "lic": "Outlet Seminuevos",
+    "lid": "s3aGa1-AU-OU",
+    "pipeline": "Ventas",
+    "pid": "6MFSzrdYTfCpoHaLCCJTPu",
+    "stage": "Tráfico",
+    "sid": "5hqNNUZcv5RhgV4kvuCzpf"
+  },
+  {
+    "lic": "Outlet Seminuevos",
+    "lid": "s3aGa1-AU-OU",
+    "pipeline": "Ventas",
+    "pid": "6MFSzrdYTfCpoHaLCCJTPu",
+    "stage": "Test Drive",
+    "sid": "mwiVeW6Ax2UoTp36kcAY1B"
+  },
+  {
+    "lic": "Outlet Seminuevos",
+    "lid": "s3aGa1-AU-OU",
+    "pipeline": "Ventas",
+    "pid": "6MFSzrdYTfCpoHaLCCJTPu",
+    "stage": "Cotización",
+    "sid": "v8GfQ8iFi7EiuEk9obTgEm"
+  },
+  {
+    "lic": "Outlet Seminuevos",
+    "lid": "s3aGa1-AU-OU",
+    "pipeline": "Ventas",
+    "pid": "6MFSzrdYTfCpoHaLCCJTPu",
+    "stage": "Reservas",
+    "sid": "ax5TqxKNzGYytHXxUVCfzK"
+  },
+  {
+    "lic": "Outlet Seminuevos",
+    "lid": "s3aGa1-AU-OU",
+    "pipeline": "Ventas",
+    "pid": "6MFSzrdYTfCpoHaLCCJTPu",
+    "stage": "Solicitudes Crédito",
+    "sid": "kvt7LXWkjUhCHCbJcRTqsg"
+  },
+  {
+    "lic": "Outlet Seminuevos",
+    "lid": "s3aGa1-AU-OU",
+    "pipeline": "Ventas",
+    "pid": "6MFSzrdYTfCpoHaLCCJTPu",
+    "stage": "Solicitudes Aprobadas",
+    "sid": "88nS9jH2yewZgyLe8GN8gP"
+  },
+  {
+    "lic": "Outlet Seminuevos",
+    "lid": "s3aGa1-AU-OU",
+    "pipeline": "Ventas",
+    "pid": "6MFSzrdYTfCpoHaLCCJTPu",
+    "stage": "Cierre",
+    "sid": "thuHfJVPfDq16ummgr8Jgd"
+  },
+  {
+    "lic": "Outlet Seminuevos",
+    "lid": "s3aGa1-AU-OU",
+    "pipeline": "Ventas",
+    "pid": "6MFSzrdYTfCpoHaLCCJTPu",
+    "stage": "Perdido",
+    "sid": "6JsGEywGQvuWuEvn2ukRVQ"
+  },
+  {
+    "lic": "Isuzu Livianos",
+    "lid": "pfyMWV-AU-IS",
+    "pipeline": "Contact Center",
+    "pid": "rNeMeCxiHEvSj1L6tBS44x",
+    "stage": "Prospección Bruta",
+    "sid": "mT2BGTiw8cwC79Ztfx7RAQ"
+  },
+  {
+    "lic": "Isuzu Livianos",
+    "lid": "pfyMWV-AU-IS",
+    "pipeline": "Contact Center",
+    "pid": "rNeMeCxiHEvSj1L6tBS44x",
+    "stage": "Base Prospección",
+    "sid": "vmgg2qDdYeCnCt7Wozfqej"
+  },
+  {
+    "lic": "Isuzu Livianos",
+    "lid": "pfyMWV-AU-IS",
+    "pipeline": "Contact Center",
+    "pid": "rNeMeCxiHEvSj1L6tBS44x",
+    "stage": "Gestión",
+    "sid": "iXQdMmeDGQEPVZQbebNXZD"
+  },
+  {
+    "lic": "Isuzu Livianos",
+    "lid": "pfyMWV-AU-IS",
+    "pipeline": "Contact Center",
+    "pid": "rNeMeCxiHEvSj1L6tBS44x",
+    "stage": "Prospección",
+    "sid": "qLGEgp9eCS1tz9pHgVua6j"
+  },
+  {
+    "lic": "Isuzu Livianos",
+    "lid": "pfyMWV-AU-IS",
+    "pipeline": "Contact Center",
+    "pid": "rNeMeCxiHEvSj1L6tBS44x",
+    "stage": "Cita",
+    "sid": "j85ShSzpDK5AQMHC4Zg7kJ"
+  },
+  {
+    "lic": "Isuzu Livianos",
+    "lid": "pfyMWV-AU-IS",
+    "pipeline": "Contact Center",
+    "pid": "rNeMeCxiHEvSj1L6tBS44x",
+    "stage": "Cita Confirmada",
+    "sid": "8usG6hvdAew3sBWiJPuK93"
+  },
+  {
+    "lic": "Isuzu Livianos",
+    "lid": "pfyMWV-AU-IS",
+    "pipeline": "Ventas",
+    "pid": "xb2isnssHf8RAiV4kee6kX",
+    "stage": "Tráfico",
+    "sid": "nmQvFYJxtsDwdgqgRovohb"
+  },
+  {
+    "lic": "Isuzu Livianos",
+    "lid": "pfyMWV-AU-IS",
+    "pipeline": "Ventas",
+    "pid": "xb2isnssHf8RAiV4kee6kX",
+    "stage": "Test Drive",
+    "sid": "p3zNExBsPxcWzrMmQshXug"
+  },
+  {
+    "lic": "Isuzu Livianos",
+    "lid": "pfyMWV-AU-IS",
+    "pipeline": "Ventas",
+    "pid": "xb2isnssHf8RAiV4kee6kX",
+    "stage": "Cotización",
+    "sid": "tJY3Jfh5dQf5BRTCzTJPXN"
+  },
+  {
+    "lic": "Isuzu Livianos",
+    "lid": "pfyMWV-AU-IS",
+    "pipeline": "Ventas",
+    "pid": "xb2isnssHf8RAiV4kee6kX",
+    "stage": "Reservas",
+    "sid": "gQhZrnKbqYFz8NNhBMxjYd"
+  },
+  {
+    "lic": "Isuzu Livianos",
+    "lid": "pfyMWV-AU-IS",
+    "pipeline": "Ventas",
+    "pid": "xb2isnssHf8RAiV4kee6kX",
+    "stage": "Solicitudes Crédito",
+    "sid": "utcwy4XmU59yzH7VhuZfxD"
+  },
+  {
+    "lic": "Isuzu Livianos",
+    "lid": "pfyMWV-AU-IS",
+    "pipeline": "Ventas",
+    "pid": "xb2isnssHf8RAiV4kee6kX",
+    "stage": "Solicitudes Aprobadas",
+    "sid": "8kRJefyHvbyK2bsPBYoJjf"
+  },
+  {
+    "lic": "Isuzu Livianos",
+    "lid": "pfyMWV-AU-IS",
+    "pipeline": "Ventas",
+    "pid": "xb2isnssHf8RAiV4kee6kX",
+    "stage": "Cierre",
+    "sid": "wrUhaJYtZYpkU3AfgxTR9d"
+  },
+  {
+    "lic": "Isuzu Livianos",
+    "lid": "pfyMWV-AU-IS",
+    "pipeline": "Ventas",
+    "pid": "xb2isnssHf8RAiV4kee6kX",
+    "stage": "Perdido",
+    "sid": "aemmcKUYXRNmhGLy35hkb9"
+  },
+  {
+    "lic": "Forland Pesados",
+    "lid": "3zV7VR-AU-FO",
+    "pipeline": "Contact Center",
+    "pid": "pDgVD6YSRGu7VvkKKKLrez",
+    "stage": "Prospección Bruta",
+    "sid": "kLxwmAWqjXdEM5PEg2nJ3k"
+  },
+  {
+    "lic": "Forland Pesados",
+    "lid": "3zV7VR-AU-FO",
+    "pipeline": "Contact Center",
+    "pid": "pDgVD6YSRGu7VvkKKKLrez",
+    "stage": "Base Prospección",
+    "sid": "b8ckEsdkAcBYFDrfcZC65g"
+  },
+  {
+    "lic": "Forland Pesados",
+    "lid": "3zV7VR-AU-FO",
+    "pipeline": "Contact Center",
+    "pid": "pDgVD6YSRGu7VvkKKKLrez",
+    "stage": "Gestión",
+    "sid": "ddndpReQM9JxYH5692Y2sv"
+  },
+  {
+    "lic": "Forland Pesados",
+    "lid": "3zV7VR-AU-FO",
+    "pipeline": "Contact Center",
+    "pid": "pDgVD6YSRGu7VvkKKKLrez",
+    "stage": "Prospección",
+    "sid": "3ydCPUEkNhYZhHFUCAsRg6"
+  },
+  {
+    "lic": "Forland Pesados",
+    "lid": "3zV7VR-AU-FO",
+    "pipeline": "Contact Center",
+    "pid": "pDgVD6YSRGu7VvkKKKLrez",
+    "stage": "Cita",
+    "sid": "dxoWF42PWqnutDERBPQRto"
+  },
+  {
+    "lic": "Forland Pesados",
+    "lid": "3zV7VR-AU-FO",
+    "pipeline": "Contact Center",
+    "pid": "pDgVD6YSRGu7VvkKKKLrez",
+    "stage": "Cita Confirmada",
+    "sid": "w7o357Bdk9dgNJRBBYHE4Q"
+  },
+  {
+    "lic": "Forland Pesados",
+    "lid": "3zV7VR-AU-FO",
+    "pipeline": "Ventas",
+    "pid": "ngLYD22URyf6mGcC4iMBNT",
+    "stage": "Tráfico",
+    "sid": "seza7JVEjqe9LTiFZ16ZaQ"
+  },
+  {
+    "lic": "Forland Pesados",
+    "lid": "3zV7VR-AU-FO",
+    "pipeline": "Ventas",
+    "pid": "ngLYD22URyf6mGcC4iMBNT",
+    "stage": "Test Drive",
+    "sid": "5quBSXR6PJBQbfmhiCP74P"
+  },
+  {
+    "lic": "Forland Pesados",
+    "lid": "3zV7VR-AU-FO",
+    "pipeline": "Ventas",
+    "pid": "ngLYD22URyf6mGcC4iMBNT",
+    "stage": "Cotización",
+    "sid": "e4Jc3hvEFYW3HUr1kmrJLj"
+  },
+  {
+    "lic": "Forland Pesados",
+    "lid": "3zV7VR-AU-FO",
+    "pipeline": "Ventas",
+    "pid": "ngLYD22URyf6mGcC4iMBNT",
+    "stage": "Reservas",
+    "sid": "9yNFBWitEbBobne7ySXNKr"
+  },
+  {
+    "lic": "Forland Pesados",
+    "lid": "3zV7VR-AU-FO",
+    "pipeline": "Ventas",
+    "pid": "ngLYD22URyf6mGcC4iMBNT",
+    "stage": "Solicitudes Crédito",
+    "sid": "gtzfWLt3oU81i6Kj4aQyCq"
+  },
+  {
+    "lic": "Forland Pesados",
+    "lid": "3zV7VR-AU-FO",
+    "pipeline": "Ventas",
+    "pid": "ngLYD22URyf6mGcC4iMBNT",
+    "stage": "Solicitudes Aprobadas",
+    "sid": "6KVsw96TCWcxbr2oCoNNwH"
+  },
+  {
+    "lic": "Forland Pesados",
+    "lid": "3zV7VR-AU-FO",
+    "pipeline": "Ventas",
+    "pid": "ngLYD22URyf6mGcC4iMBNT",
+    "stage": "Cierre",
+    "sid": "kf3umoL2CmqgcvTtRNq9xT"
+  },
+  {
+    "lic": "Forland Pesados",
+    "lid": "3zV7VR-AU-FO",
+    "pipeline": "Ventas",
+    "pid": "ngLYD22URyf6mGcC4iMBNT",
+    "stage": "Perdido",
+    "sid": "8CxBJRyCCL5tKutr8YbaXV"
+  }
+]

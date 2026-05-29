@@ -1,0 +1,36 @@
+{
+  "name": "assa-gatherleads-meta-capi",
+  "version": "1.0.0",
+  "description": "Integración que recibe webhooks de GatherLeads (CarConnect) y envía eventos a Meta Conversions API según la etapa del funnel, diferenciados por marca, bajo un único Pixel.",
+  "main": "dist/index.js",
+  "type": "commonjs",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "extract:stages": "node scripts/extract-stages.js",
+    "dev": "ts-node-dev --respawn --transpile-only src/index.ts",
+    "start": "node dist/index.js",
+    "test": "node --test"
+  },
+  "keywords": [
+    "gatherleads",
+    "carconnect",
+    "meta",
+    "conversions-api",
+    "capi",
+    "webhook",
+    "facebook-pixel"
+  ],
+  "author": "ASSA",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^22.5.0",
+    "@vercel/node": "^3.2.0",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.5.4"
+  }
+}

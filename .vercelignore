@@ -1,0 +1,5 @@
+dist/
+node_modules/
+*.log
+gatherleads-webhook-docs *.html
+scripts/smoke.js
