@@ -67,7 +67,11 @@ export async function sendEvents(events: MetaServerEvent[]): Promise<MetaSendRes
 
     logger.info('Eventos enviados a Meta CAPI', {
       status: res.status,
-      events: events.map((e) => e.event_name),
+      events: events.map((e) => ({
+        name: e.event_name,
+        brand: e.custom_data?.brand,
+        stage: e.custom_data?.funnel_stage,
+      })),
       body,
     });
     return { ok: true, status: res.status, body };
