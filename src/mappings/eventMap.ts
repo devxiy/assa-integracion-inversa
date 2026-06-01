@@ -16,6 +16,8 @@ export interface MetaEventMapping {
   eventName: string;
   /** true si es un evento estándar de Meta; false si es personalizado. */
   standard: boolean;
+  /** true si Meta exige currency + value (caso de Purchase). */
+  requiresValue?: boolean;
 }
 
 /** Evento al crearse el lead (deal.created). */
@@ -51,7 +53,7 @@ export const STAGE_EVENT_MAP: Record<string, MetaEventMapping | null> = {
   'Reservas': { eventName: 'AddToCart', standard: true },
   'Solicitudes Crédito': { eventName: 'AddPaymentInfo', standard: true },
   'Solicitudes Aprobadas': { eventName: 'CreditoAprobado', standard: false },
-  'Cierre': { eventName: 'Purchase', standard: true },
+  'Cierre': { eventName: 'Purchase', standard: true, requiresValue: true },
   'Perdido': { eventName: 'LeadPerdido', standard: false },
 };
 

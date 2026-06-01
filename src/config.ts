@@ -26,6 +26,10 @@ export const config = {
     accessToken: required('META_ACCESS_TOKEN', process.env.META_ACCESS_TOKEN),
     graphVersion: process.env.META_GRAPH_API_VERSION ?? 'v21.0',
     testEventCode: process.env.META_TEST_EVENT_CODE?.trim() || undefined,
+    // Meta exige currency (y value) en eventos Purchase. Ecuador usa USD.
+    defaultCurrency: (process.env.META_DEFAULT_CURRENCY ?? 'USD').trim().toUpperCase(),
+    // value por defecto cuando el payload no trae monto de venta.
+    defaultPurchaseValue: Number(process.env.META_DEFAULT_PURCHASE_VALUE ?? 0),
   },
 
   gatherleads: {

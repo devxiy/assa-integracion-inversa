@@ -1,3 +1,4 @@
+import { config } from '../config';
 import { GatherLeadsDealValue, GatherLeadsEvent } from '../types';
 import { brandFromLicenseId, resolveStageById } from '../mappings/stages';
 import {
@@ -136,6 +137,15 @@ export function transform(event: GatherLeadsEvent): TransformResult {
     typification: deal.typification,
     gatherleads_resource_id: event.resourceId,
   });
+
+  // Meta exige currency + value en eventos Purchase. El payload de GatherLeads
+  // no trae monto de venta, así que usamos los valores por defecto configurables
+  // (META_DEFAULT_PURCHASE_VALUE / META_DEFAULT_CURRENCY). Si en el futuro se
+  // quiere optimizar por valor, basta con configurar un ticket promedio.
+  if (mapping.requiresValue) {
+    customData.value = config.meta.defaultPurchaseValue;
+    customData.currency = config.meta.defaultCurrency;
+  }
 
   const metaEvent: MetaServerEvent = {
     event_name: mapping.eventName,
