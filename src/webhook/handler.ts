@@ -13,10 +13,6 @@ function getRawBody(req: Request): Buffer | undefined {
 }
 
 export async function handleGatherLeadsWebhook(req: Request, res: Response): Promise<void> {
-  // TEMPORAL: registrar headers entrantes para identificar el header de firma
-  // que usa GatherLeads. Quitar una vez confirmado el esquema de firma.
-  logger.info('Webhook recibido — headers', { headers: req.headers });
-
   // 1) Verificación de firma (si está activada).
   const sig = verifySignature(getRawBody(req), req.header(config.gatherleads.signatureHeader));
   if (!sig.valid) {
