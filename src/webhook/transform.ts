@@ -2,10 +2,10 @@ import { config } from '../config';
 import { GatherLeadsDealValue, GatherLeadsEvent } from '../types';
 import { brandFromLicenseId, resolveStageById } from '../mappings/stages';
 import {
-  DEAL_CREATED_EVENT,
-  MetaEventMapping,
-  TYPIFICATION_EVENT,
-  metaEventForStage,
+  CREATED_FALLBACK_LABEL,
+  TYPIFICATION_LABEL,
+  buildEventName,
+  stageRequiresValue,
 } from '../mappings/eventMap';
 import { hashEmail, hashExternalId, hashName, hashPhone } from '../meta/hash';
 import { MetaServerEvent, MetaUserData } from '../meta/capi';
@@ -55,60 +55,65 @@ function removeUndefined(obj: Record<string, unknown>): Record<string, unknown> 
   return out;
 }
 
+interface StageDecision {
+  /** Etiqueta a usar en el nombre del evento: etapa real, 'Lead' o 'LeadCualificado'. */
+  label: string | null;
+  /** Nombre de la etapa real del funnel, si aplica (para value/currency y custom_data). */
+  stageName?: string;
+  /** Motivo legible para logs. */
+  reason: string;
+}
+
 /**
- * Decide qué evento de Meta corresponde a un evento de GatherLeads.
- *  - deal.created                         -> Lead
- *  - deal.updated + lastStageCC           -> evento mapeado por etapa
- *  - deal.updated + typification          -> evento de cualificación
- *  - resto (consentimiento, CRM, etc.)    -> ignorado
+ * Decide qué etiqueta (etapa) representa el evento de GatherLeads. El nombre
+ * final del evento se arma como `{Marca}_{etiqueta}` en transform().
+ *  - deal.created                  -> etapa actual del deal (o 'Lead' si no resuelve)
+ *  - deal.updated + lastStageCC    -> nueva etapa del funnel
+ *  - deal.updated + typification   -> 'LeadCualificado'
+ *  - resto (consentimiento, CRM)   -> ignorado
  */
-function decideMapping(event: GatherLeadsEvent): { mapping: MetaEventMapping | null; stageName?: string; reason: string } {
+function decideStage(event: GatherLeadsEvent, deal: GatherLeadsDealValue): StageDecision {
   const updated = event.changes?.updatedFields ?? {};
 
   if (event.eventType === 'deal.created') {
-    return { mapping: DEAL_CREATED_EVENT, reason: 'deal.created -> Lead' };
+    const stage = resolveStageById(deal.lastStageCC);
+    if (stage) {
+      return { label: stage.stage, stageName: stage.stage, reason: `deal.created en etapa "${stage.stage}"` };
+    }
+    return { label: CREATED_FALLBACK_LABEL, reason: 'deal.created sin etapa resoluble -> Lead' };
   }
 
   if (event.eventType === 'deal.updated') {
     if (updated.lastStageCC) {
       const stage = resolveStageById(updated.lastStageCC);
       if (!stage) {
-        return { mapping: null, reason: `stageId desconocido (${updated.lastStageCC})` };
+        return { label: null, reason: `stageId desconocido (${updated.lastStageCC})` };
       }
-      const mapping = metaEventForStage(stage.stage);
-      return {
-        mapping,
-        stageName: stage.stage,
-        reason: mapping
-          ? `avance de etapa "${stage.stage}" -> ${mapping.eventName}`
-          : `etapa "${stage.stage}" sin mapeo de Meta`,
-      };
+      return { label: stage.stage, stageName: stage.stage, reason: `avance a etapa "${stage.stage}"` };
     }
 
-    if (updated.typification) {
-      return {
-        mapping: TYPIFICATION_EVENT,
-        reason: TYPIFICATION_EVENT
-          ? `tipificación (${updated.typification}) -> ${TYPIFICATION_EVENT.eventName}`
-          : 'tipificación sin evento configurado',
-      };
+    if (updated.typification && TYPIFICATION_LABEL) {
+      return { label: TYPIFICATION_LABEL, reason: `tipificación (${updated.typification}) -> ${TYPIFICATION_LABEL}` };
     }
 
-    return { mapping: null, reason: 'deal.updated automático (consentimiento/CRM) — ignorado' };
+    return { label: null, reason: 'deal.updated automático (consentimiento/CRM) — ignorado' };
   }
 
-  return { mapping: null, reason: `eventType no soportado (${event.eventType})` };
+  return { label: null, reason: `eventType no soportado (${event.eventType})` };
 }
 
 export function transform(event: GatherLeadsEvent): TransformResult {
-  const { mapping, stageName, reason } = decideMapping(event);
-  if (!mapping) {
-    return { event: null, reason };
+  const deal = snapshot(event);
+  const decision = decideStage(event, deal);
+  if (!decision.label) {
+    return { event: null, reason: decision.reason };
   }
 
-  const deal = snapshot(event);
   const licenseId = event.metadata?.licenseId;
   const brand = brandFromLicenseId(licenseId) ?? brandFromLicenseId(deal.lastPipelineCC) ?? 'desconocida';
+
+  // Nombre del evento: Marca + Etapa (ej. ChevroletPesados_Cotizacion).
+  const eventName = buildEventName(brand, decision.label);
 
   // La etapa actual del deal (aunque el evento no la haya cambiado).
   const currentStage = resolveStageById(deal.lastStageCC);
@@ -122,7 +127,8 @@ export function transform(event: GatherLeadsEvent): TransformResult {
     content_category: brand,
     // Contexto del funnel.
     pipeline: currentStage?.pipeline,
-    funnel_stage: stageName ?? currentStage?.stage,
+    funnel_stage: decision.stageName ?? currentStage?.stage ?? decision.label,
+    event_label: decision.label,
     // Atributos comerciales del lead.
     product: deal.product,
     agency: deal.agency,
@@ -138,17 +144,16 @@ export function transform(event: GatherLeadsEvent): TransformResult {
     gatherleads_resource_id: event.resourceId,
   });
 
-  // Meta exige currency + value en eventos Purchase. El payload de GatherLeads
-  // no trae monto de venta, así que usamos los valores por defecto configurables
-  // (META_DEFAULT_PURCHASE_VALUE / META_DEFAULT_CURRENCY). Si en el futuro se
-  // quiere optimizar por valor, basta con configurar un ticket promedio.
-  if (mapping.requiresValue) {
+  // En la etapa de cierre incluimos value + currency (optimización por valor).
+  // El payload de GatherLeads no trae monto, así que usamos los valores por
+  // defecto configurables (META_DEFAULT_PURCHASE_VALUE / META_DEFAULT_CURRENCY).
+  if (stageRequiresValue(decision.stageName)) {
     customData.value = config.meta.defaultPurchaseValue;
     customData.currency = config.meta.defaultCurrency;
   }
 
   const metaEvent: MetaServerEvent = {
-    event_name: mapping.eventName,
+    event_name: eventName,
     event_time: Math.floor((event.timestamp ?? Date.now()) / 1000),
     action_source: ACTION_SOURCE,
     event_id: event.eventId,
@@ -156,5 +161,5 @@ export function transform(event: GatherLeadsEvent): TransformResult {
     custom_data: customData,
   };
 
-  return { event: metaEvent, reason };
+  return { event: metaEvent, reason: decision.reason };
 }

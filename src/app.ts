@@ -2,7 +2,7 @@ import express, { Express, Request, Response } from 'express';
 import { metaIsConfigured } from './config';
 import { handleGatherLeadsWebhook } from './webhook/handler';
 import { listBrands } from './mappings/stages';
-import { STAGE_EVENT_MAP } from './mappings/eventMap';
+import { FUNNEL_STAGES, buildEventName } from './mappings/eventMap';
 
 /** Construye la app de Express (sin arrancar el servidor). */
 export function createApp(): Express {
@@ -37,11 +37,16 @@ export function createApp(): Express {
     });
   });
 
-  // Referencia rápida del mapeo etapa -> evento de Meta (útil para QA).
+  // Referencia rápida de la estrategia de eventos (Marca + Etapa) para QA.
   app.get('/mappings', (_req: Request, res: Response) => {
+    const brands = listBrands();
+    const stages = [...FUNNEL_STAGES['Contact Center'], ...FUNNEL_STAGES['Ventas']];
+    const example = brands[0]?.brand ?? 'Chevrolet Pesados';
     res.status(200).json({
-      brands: listBrands(),
-      stageToMetaEvent: STAGE_EVENT_MAP,
+      strategy: 'event_name = {Marca}_{Etapa}',
+      brands,
+      funnelStages: FUNNEL_STAGES,
+      exampleEventNames: stages.map((s) => buildEventName(example, s)),
     });
   });
 

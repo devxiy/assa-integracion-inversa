@@ -1,64 +1,74 @@
 /**
- * Mapeo de la etapa del funnel de GatherLeads -> evento de Meta.
+ * Estrategia de nombres de evento: MARCA + ETAPA.
  *
- * Estrategia (según lo solicitado): un ÚNICO Pixel para todas las marcas.
- * El evento se determina por la ETAPA del funnel; la MARCA viaja como
- * diferencial dentro de `custom_data` (brand, license_id, content_category),
- * de modo que en Meta Events Manager / Ads se puede segmentar por marca sin
- * necesidad de un pixel por marca.
+ * Cada evento que se envía a Meta se nombra como `{Marca}_{Etapa}` (en
+ * PascalCase, sin acentos ni espacios), de modo que cada combinación
+ * marca/etapa del funnel es un evento DISTINTO y optimizable directamente en
+ * campañas (ej. `ChevroletPesados_Cotizacion`, `VWLivianos_Cierre`).
  *
- * `null` significa "no enviar a Meta" (etapa intermedia sin valor publicitario).
- * Puedes ajustar libremente estos valores según la estrategia de medición.
+ * Se envían TODAS las etapas del funnel (pipelines Contact Center y Ventas).
+ * La marca también viaja en `custom_data` (brand, license_id, content_category)
+ * para reportes y desgloses.
  */
 
-export interface MetaEventMapping {
-  /** Nombre del evento en Meta. Estándar (Lead, Schedule, Purchase...) o personalizado. */
-  eventName: string;
-  /** true si es un evento estándar de Meta; false si es personalizado. */
-  standard: boolean;
-  /** true si Meta exige currency + value (caso de Purchase). */
-  requiresValue?: boolean;
+/** Convierte un texto a un token ASCII PascalCase apto para nombres de evento de Meta. */
+export function toEventToken(text: string): string {
+  return text
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '') // quita acentos (á -> a)
+    .replace(/[^a-zA-Z0-9\s]/g, ' ') // cualquier no alfanumérico -> espacio
+    .trim()
+    .split(/\s+/)
+    .filter(Boolean)
+    .map((w) => w.charAt(0).toUpperCase() + w.slice(1))
+    .join('');
 }
 
-/** Evento al crearse el lead (deal.created). */
-export const DEAL_CREATED_EVENT: MetaEventMapping = { eventName: 'Lead', standard: true };
-
-/**
- * Evento cuando el asesor tipifica el lead (updatedFields.typification).
- * Útil para audiencias de leads cualificados. Pon `null` para no enviarlo.
- */
-export const TYPIFICATION_EVENT: MetaEventMapping | null = {
-  eventName: 'LeadCualificado',
-  standard: false,
-};
-
-/**
- * Mapa por nombre de etapa (igual en todas las marcas).
- * Pipeline Contact Center y Ventas comparten este diccionario porque los
- * nombres de etapa no se solapan entre ambos.
- */
-export const STAGE_EVENT_MAP: Record<string, MetaEventMapping | null> = {
-  // ── Contact Center ──
-  'Prospección Bruta': null,
-  'Base Prospección': null,
-  'Gestión': { eventName: 'Contact', standard: true },
-  'Prospección': null,
-  'Cita': { eventName: 'Schedule', standard: true },
-  'Cita Confirmada': { eventName: 'CitaConfirmada', standard: false },
-
-  // ── Ventas ──
-  'Tráfico': { eventName: 'VisitaShowroom', standard: false },
-  'Test Drive': { eventName: 'TestDrive', standard: false },
-  'Cotización': { eventName: 'InitiateCheckout', standard: true },
-  'Reservas': { eventName: 'AddToCart', standard: true },
-  'Solicitudes Crédito': { eventName: 'AddPaymentInfo', standard: true },
-  'Solicitudes Aprobadas': { eventName: 'CreditoAprobado', standard: false },
-  'Cierre': { eventName: 'Purchase', standard: true, requiresValue: true },
-  'Perdido': { eventName: 'LeadPerdido', standard: false },
-};
-
-/** Devuelve el mapeo de Meta para una etapa, o null si no debe enviarse. */
-export function metaEventForStage(stageName: string | undefined): MetaEventMapping | null {
-  if (!stageName) return null;
-  return STAGE_EVENT_MAP[stageName] ?? null;
+/** Construye el nombre del evento de Meta a partir de la marca y la etiqueta (etapa). */
+export function buildEventName(brand: string, label: string): string {
+  const b = toEventToken(brand);
+  const l = toEventToken(label);
+  return b ? `${b}_${l}` : l;
 }
+
+/** Etiqueta usada cuando se crea el lead y no hay una etapa resoluble. */
+export const CREATED_FALLBACK_LABEL = 'Lead';
+
+/**
+ * Etiqueta para la tipificación del lead (cualificación por el asesor).
+ * Se combina con la marca: `{Marca}_LeadCualificado`. `null` para no enviarlo.
+ */
+export const TYPIFICATION_LABEL: string | null = 'LeadCualificado';
+
+/**
+ * Etapas que representan cierre/venta y por tanto envían `value` + `currency`
+ * (útil para optimización por valor / ROAS).
+ */
+const VALUE_STAGES = new Set<string>(['Cierre']);
+
+/** Indica si una etapa debe incluir value + currency en el evento. */
+export function stageRequiresValue(stageName: string | undefined): boolean {
+  return stageName ? VALUE_STAGES.has(stageName) : false;
+}
+
+/** Todas las etapas del funnel por pipeline (referencia para QA / endpoint /mappings). */
+export const FUNNEL_STAGES: Record<string, string[]> = {
+  'Contact Center': [
+    'Prospección Bruta',
+    'Base Prospección',
+    'Gestión',
+    'Prospección',
+    'Cita',
+    'Cita Confirmada',
+  ],
+  Ventas: [
+    'Tráfico',
+    'Test Drive',
+    'Cotización',
+    'Reservas',
+    'Solicitudes Crédito',
+    'Solicitudes Aprobadas',
+    'Cierre',
+    'Perdido',
+  ],
+};
