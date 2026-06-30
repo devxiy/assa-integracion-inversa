@@ -194,16 +194,17 @@ export function transform(event: GatherLeadsEvent): TransformResult {
     customData.currency = config.meta.defaultCurrency;
   }
 
-  // Conversion Leads (CAPI for CRM): si el lead trae el leadgen_id de Meta
-  // (es decir, vino de un Meta Lead Ad), lo enviamos como user_data.lead_id
-  // (numérico, sin hashear) y marcamos el evento como CRM. Solo así Meta lo
-  // reconoce para optimización de Conversion Leads. Los leads de otras fuentes
-  // (web/showroom) salen sin estas marcas, como eventos normales.
+  // Conversions API for CRM: TODOS los eventos vienen de CarConnect (el CRM),
+  // así que se marcan como CRM (event_source + lead_event_source). Cuando el
+  // lead trae el leadgen_id de Meta (vino de un Meta Lead Ad) se agrega además
+  // user_data.lead_id (numérico, sin hashear) para un match más fuerte; el resto
+  // hace match por email/teléfono hasheados.
+  customData.event_source = 'crm';
+  customData.lead_event_source = config.meta.leadEventSource;
+
   const leadId = extractLeadId(deal);
   if (leadId) {
     userData.lead_id = Number(leadId);
-    customData.event_source = 'crm';
-    customData.lead_event_source = config.meta.leadEventSource;
   }
 
   const metaEvent: MetaServerEvent = {
