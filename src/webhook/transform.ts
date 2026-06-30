@@ -55,6 +55,48 @@ function removeUndefined(obj: Record<string, unknown>): Record<string, unknown> 
   return out;
 }
 
+/** Un Meta lead_id es un entero de 15-17 dígitos. */
+const LEAD_ID_RE = /^\d{15,17}$/;
+/** Nombres de campo habituales donde un CRM guarda el leadgen_id de Meta. */
+const LEAD_ID_KEYS = [
+  'leadgenId',
+  'leadGenId',
+  'leadgen_id',
+  'metaLeadId',
+  'fbLeadId',
+  'facebookLeadId',
+  'leadId',
+  'adLeadId',
+];
+/** Campos que nunca son lead_id (evita falsos positivos en la autodetección). */
+const LEAD_ID_SKIP_KEYS = new Set(['phone', 'identification', 'correlationId']);
+
+/**
+ * Extrae el Meta leadgen_id del deal SOLO si viene en el payload de GatherLeads.
+ *  1) Usa el campo configurado en GATHERLEADS_LEAD_ID_FIELD si existe.
+ *  2) Si no, revisa nombres de campo habituales.
+ *  3) Como último recurso, autodetecta cualquier valor de 15-17 dígitos.
+ * Devuelve undefined si no hay un candidato válido (lead no proveniente de Meta).
+ */
+function extractLeadId(deal: GatherLeadsDealValue): string | undefined {
+  const isLeadId = (v: unknown): v is string | number =>
+    (typeof v === 'string' || typeof v === 'number') && LEAD_ID_RE.test(String(v));
+
+  const configured = config.gatherleads.leadIdField;
+  if (configured && isLeadId(deal[configured])) return String(deal[configured]);
+
+  for (const key of LEAD_ID_KEYS) {
+    if (isLeadId(deal[key])) return String(deal[key]);
+  }
+
+  for (const [k, v] of Object.entries(deal)) {
+    if (LEAD_ID_SKIP_KEYS.has(k)) continue;
+    if (isLeadId(v)) return String(v);
+  }
+
+  return undefined;
+}
+
 interface StageDecision {
   /** Etiqueta a usar en el nombre del evento: etapa real, 'Lead' o 'LeadCualificado'. */
   label: string | null;
@@ -150,6 +192,18 @@ export function transform(event: GatherLeadsEvent): TransformResult {
   if (stageRequiresValue(decision.stageName)) {
     customData.value = config.meta.defaultPurchaseValue;
     customData.currency = config.meta.defaultCurrency;
+  }
+
+  // Conversion Leads (CAPI for CRM): si el lead trae el leadgen_id de Meta
+  // (es decir, vino de un Meta Lead Ad), lo enviamos como user_data.lead_id
+  // (numérico, sin hashear) y marcamos el evento como CRM. Solo así Meta lo
+  // reconoce para optimización de Conversion Leads. Los leads de otras fuentes
+  // (web/showroom) salen sin estas marcas, como eventos normales.
+  const leadId = extractLeadId(deal);
+  if (leadId) {
+    userData.lead_id = Number(leadId);
+    customData.event_source = 'crm';
+    customData.lead_event_source = config.meta.leadEventSource;
   }
 
   const metaEvent: MetaServerEvent = {

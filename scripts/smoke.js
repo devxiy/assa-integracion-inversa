@@ -91,7 +91,20 @@ const tipificacion = {
   metadata: dealCreated.metadata,
 };
 
-for (const [name, ev] of Object.entries({ dealCreated, stageAdvance, cierreChevrolet, consent, tipificacion })) {
+// Lead que SÍ vino de Meta Lead Ads: trae leadgen_id -> Conversion Leads.
+const metaLead = {
+  eventId: 'test-meta-lead',
+  timestamp: 1778708721668,
+  eventType: 'deal.updated',
+  resourceId: 'def',
+  changes: {
+    newValue: { firstName: 'Luis', email: 'luis@x.com', phone: '+593900000001', leadgenId: '1234567890123456' },
+    updatedFields: { lastStageCC: '8XiTASUVAH8k6T9QHKpi2h', updatedAt: 1778708721212 }, // Chevrolet Livianos / Tráfico
+  },
+  metadata: { licenseId: 'fWQnYD-AU-CH', contactId: 'c2' },
+};
+
+for (const [name, ev] of Object.entries({ dealCreated, stageAdvance, cierreChevrolet, consent, tipificacion, metaLead })) {
   const out = transform(ev);
   console.log(`\n=== ${name} ===`);
   console.log('reason:', out.reason);

@@ -30,12 +30,17 @@ export const config = {
     defaultCurrency: (process.env.META_DEFAULT_CURRENCY ?? 'USD').trim().toUpperCase(),
     // value por defecto cuando el payload no trae monto de venta.
     defaultPurchaseValue: Number(process.env.META_DEFAULT_PURCHASE_VALUE ?? 0),
+    // Nombre de la fuente CRM para eventos Conversion Leads (custom_data.lead_event_source).
+    leadEventSource: (process.env.META_LEAD_EVENT_SOURCE ?? 'ASSA CRM').trim(),
   },
 
   gatherleads: {
     secret: process.env.GATHERLEADS_SECRET ?? '',
     signatureHeader: (process.env.GATHERLEADS_SIGNATURE_HEADER ?? 'x-gatherleads-signature').toLowerCase(),
     verifySignature: bool(process.env.GATHERLEADS_VERIFY_SIGNATURE, false),
+    // (Opcional) Nombre exacto del campo del payload que contiene el Meta
+    // leadgen_id. Si se deja vacío, se autodetecta un valor de 15-17 dígitos.
+    leadIdField: process.env.GATHERLEADS_LEAD_ID_FIELD?.trim() || undefined,
   },
 
   skipUnmappedStages: bool(process.env.SKIP_UNMAPPED_STAGES, true),
