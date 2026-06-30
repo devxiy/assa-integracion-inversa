@@ -8,6 +8,8 @@ export interface MetaUserData {
   fn?: string[];
   ln?: string[];
   external_id?: string[];
+  /** País (ISO 2 letras) hasheado. */
+  country?: string[];
   /** Meta lead_id (Conversion Leads). Numérico, NO se hashea. */
   lead_id?: number;
   [key: string]: unknown;

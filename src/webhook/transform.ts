@@ -7,7 +7,7 @@ import {
   buildEventName,
   stageRequiresValue,
 } from '../mappings/eventMap';
-import { hashEmail, hashExternalId, hashName, hashPhone } from '../meta/hash';
+import { hashCountry, hashEmail, hashExternalId, hashName, hashPhone } from '../meta/hash';
 import { MetaServerEvent, MetaUserData } from '../meta/capi';
 
 const ACTION_SOURCE = 'system_generated';
@@ -43,6 +43,10 @@ function buildUserData(deal: GatherLeadsDealValue, contactId?: string): MetaUser
   if (idHash) externalIds.push(idHash);
   if (contactHash) externalIds.push(contactHash);
   if (externalIds.length) ud.external_id = externalIds;
+
+  // País por defecto (ASSA opera en Ecuador) para mejorar el match quality.
+  const country = hashCountry(config.meta.defaultCountry);
+  if (country) ud.country = [country];
 
   return ud;
 }

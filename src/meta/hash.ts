@@ -47,3 +47,13 @@ export function hashExternalId(id?: string): string | undefined {
   if (!v) return undefined;
   return sha256(v);
 }
+
+/**
+ * País: Meta requiere el código ISO de 2 letras en minúsculas. Ej: "ec".
+ */
+export function hashCountry(country?: string): string | undefined {
+  if (!country) return undefined;
+  const v = normalizeBasic(country);
+  if (!v) return undefined;
+  return sha256(v);
+}

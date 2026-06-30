@@ -32,6 +32,9 @@ export const config = {
     defaultPurchaseValue: Number(process.env.META_DEFAULT_PURCHASE_VALUE ?? 0),
     // Nombre de la fuente CRM para eventos Conversion Leads (custom_data.lead_event_source).
     leadEventSource: (process.env.META_LEAD_EVENT_SOURCE ?? 'ASSA CRM').trim(),
+    // País por defecto (ISO 2 letras) para Advanced Matching. ASSA opera en Ecuador.
+    // Vacío para no enviarlo.
+    defaultCountry: (process.env.META_DEFAULT_COUNTRY ?? 'ec').trim().toLowerCase(),
   },
 
   gatherleads: {
