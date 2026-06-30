@@ -12,6 +12,23 @@ function getRawBody(req: Request): Buffer | undefined {
   return (req as Request & { rawBody?: Buffer }).rawBody;
 }
 
+/**
+ * DIAGNÓSTICO TEMPORAL (Conversion Leads): busca recursivamente en el payload
+ * cualquier valor que parezca un Meta Lead ID (entero de 15-17 dígitos) para
+ * confirmar si GatherLeads ya envía el leadgen_id. Quitar una vez resuelto.
+ */
+function scanForLeadIdCandidates(obj: unknown, path: string, out: string[]): void {
+  if (!obj || typeof obj !== 'object') return;
+  for (const [k, v] of Object.entries(obj as Record<string, unknown>)) {
+    const here = path ? `${path}.${k}` : k;
+    if ((typeof v === 'string' || typeof v === 'number') && /^\d{15,17}$/.test(String(v))) {
+      out.push(`${here}=${v}`);
+    } else if (v && typeof v === 'object') {
+      scanForLeadIdCandidates(v, here, out);
+    }
+  }
+}
+
 export async function handleGatherLeadsWebhook(req: Request, res: Response): Promise<void> {
   // 1) Verificación de firma (si está activada).
   const sig = verifySignature(getRawBody(req), req.header(config.gatherleads.signatureHeader));
@@ -28,6 +45,15 @@ export async function handleGatherLeadsWebhook(req: Request, res: Response): Pro
     res.status(400).json({ error: 'invalid_payload' });
     return;
   }
+
+  // DIAGNÓSTICO TEMPORAL: detectar si llega un Meta lead_id en el payload.
+  const leadIdCandidates: string[] = [];
+  scanForLeadIdCandidates(event, '', leadIdCandidates);
+  logger.info('Diagnóstico lead_id', {
+    eventId: event.eventId,
+    eventType: event.eventType,
+    candidates: leadIdCandidates.length ? leadIdCandidates : 'ninguno',
+  });
 
   // 2) Idempotencia por eventId.
   if (seen(event.eventId)) {
